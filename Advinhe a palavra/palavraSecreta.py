@@ -58,13 +58,10 @@ def jogo():
     print(f"Você têm {limiteTentativas} tentativas.")
 
     while True:
-        PedirLetra = input("Chute uma letra: ").lower()
-        """if len(PedirLetra) > 1:
-            print("Digite apenas uma letra por vez!: ")
-            continue"""
-        if PedirLetra in palavraSecreta:
-            letrasAcertadas += PedirLetra
-
+        chute = input("Chute uma letra: ").lower()
+    
+        if chute in palavraSecreta:
+            letrasAcertadas += chute
         palavraFormada = ""
         for Letra in palavraSecreta:
             if Letra in letrasAcertadas:
@@ -89,4 +86,5 @@ def jogo():
             print("Número de tentativas: ", tentativas)
             reiniciarJogo()
             return
+
 jogo()
