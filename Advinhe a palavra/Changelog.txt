@@ -1,0 +1,7 @@
+
+Foi removido o trecho de código que limitava o número de letras a 1 por chute. (Em breve, ele será refatorado.
+  if len(PedirLetra) > 1:
+    print("Digite apenas uma letra por vez!: ")
+    continue
+
+Algumas variáveis foram substituídas pra facilitar a leitura. Exemplo: "Pedir letra" passou a se chamar "Chute"
